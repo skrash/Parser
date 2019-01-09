@@ -3,7 +3,7 @@ function GetHtml(RegStr,bodyHtml)
     /* RegStr - регулярное выражение в виде строки для поиска тега с заданным классом 
     bodyHtml - весь документ в виде строки 
     На выходе массив найденых строк содержащие искомый тег в документе*/
-    if(typeof(RegStr) != typeof('') || bodyHtml != typeof('') || InnerLevel != typeof(1))
+    if(typeof(RegStr) != typeof('') || typeof(bodyHtml) != typeof(''))
     {
         console.log('incorrect argument for function.');
         return null;

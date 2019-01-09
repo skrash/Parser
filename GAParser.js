@@ -5,7 +5,7 @@ function GetAttr(AttrName,Tag)
     На выходе массив извлеченных строк из атрибутов в тегах
     ТОЛЬКО ДЛЯ СТРОКОВЫХ ДАННЫХ АТРИБУТА (полезно для извлечение ссылок якорей и тп)
     Для иных случаев функцию не применять.*/
-    if(typeof(RegStr) != typeof('') || bodyHtml != typeof('') || InnerLevel != typeof(1))
+    if(typeof(AttrName) != typeof('') || typeof(Tag) != typeof(''))
     {
         console.log('incorrect argument for function.');
         return null;
